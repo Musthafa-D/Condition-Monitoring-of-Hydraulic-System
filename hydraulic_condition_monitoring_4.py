@@ -1,31 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jan  7 17:26:29 2022
-
-@author: amitn
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jan  7 17:20:25 2022
-
-@author: amitn
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jan  7 17:16:50 2022
-
-@author: amitn
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jan  7 17:14:08 2022
-
-@author: amitn
-"""
-
 import os
 import seaborn as sns
 import random
