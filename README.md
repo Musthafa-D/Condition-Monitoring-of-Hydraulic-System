@@ -1,38 +1,66 @@
-# Condition-Monitoring-of-Hydraulic-System
+# Condition Monitoring of Hydraulic System
 
-The task aimed to evaluate condition monitoring of hydraulic system and provide training and tuning based on the given dataset for reliable predictions about expected maintenance of each valves and other parameters through supervised learning.
+## Overview
 
-A DFNN network was built for the system to train itself to predict the correct outcomes of the system based on different conditions or factors.
+This project focuses on **condition monitoring and fault classification** of a hydraulic system using supervised machine learning methods.  
+The task involves training a **Deep Feedforward Neural Network (DFNN)** to predict system conditions and faults based on multivariate time-series sensor data.
 
-This task involves Fault Classification and Condition Monitoring of hydraulic system 
-which plays the crucial role in predictive maintenance of industrial plants and machineries. 
+This type of predictive approach is useful for **predictive maintenance** in industrial machinery where early detection of faults can reduce downtime and costs.
 
-Motivation: The objective of this assignment is condition monitoring and fault classification 
-of a hydraulic system using data-driven machine learning methods. 
+---
 
-Tasks: 
-   Detailed exploration and analysis of the Dataset, 
-   Development of a suitable model architecture, Discussing and selection of appropriate 
-  loss function, 
-   Implementation of a training based on a given data loader, 
-   Reusing this training for a tuning loop, 
-   Detailed evaluation and comparison of the obtained results 
-  Machine learning method such as Deep Feedforward Neural Network (DFNN) is chosen and 
-  to be implemented using PyTorch are to be applied. This type of Neural Network is 
-  developed in order to perform classification tasks based on the provided datasets. 
-  Comparison of the testing results for the different cases in the DFNN to be analyzed.
-  
-Dataset provided was experimentally obtained with a hydraulic test rig. This test rig 
-consists of a primary working and a secondary cooling-filtration circuit, connected via the 
-oil tank. The system cycle repeats constant load cycles (duration 60 seconds) and 
-measures process values such as pressures, volume flows and temperatures while the 
-condition of four hydraulic components (Cooler, Valve, Pump and Accumulator) are 
-quantitatively varied. 
+## Dataset
 
-The input dataset contains data obtained from 17 different sensors namely “PS1”, “PS2”, 
-“PS3”, “PS4”, “PS5”, “PS6”, “EPS1”, “FS1”, “FS2”, “TS1”, “TS2”, “TS3”, “TS4”, “VS1”, 
-“CP”, “CE” and “SE”. Four types of faults are superimposed with their respective grades of 
-severity, provided in a label dataset named “Profile.txt”. All the input and output datasets 
-contain equal number of instances (2205) while the different input sensors possess different 
-attributes per instance. Hence, the input datasets can be termed as Multivariate-Time Series 
-Data.
+The dataset was obtained from an experimental **hydraulic test rig** with measurements recorded from 17 different sensors, including pressures, flow rates, and temperatures.
+
+The dataset contains:
+- 2205 instances
+- Multivariate time-series data
+- Four types of faults with varying severity  
+All input features and labels are provided in the dataset.
+
+---
+
+## Objective
+
+- Explore and analyze the provided dataset
+- Build and train a suitable deep learning model
+- Select appropriate loss function and optimizer
+- Train and evaluate predictive models
+- Compare results across different model configurations
+
+The goal is to develop a model capable of **reliable classification of hydraulic system conditions**.
+
+---
+
+## Approach
+
+1. **Data Loading & Preprocessing**
+   - Standardization / normalization
+   - Train/test split
+
+2. **Model Architecture**
+   - Deep Feedforward Neural Network (DFNN) implemented in PyTorch
+   - Multiple layers with non-linear activation functions
+
+3. **Training Pipeline**
+   - Supervised learning
+   - Loss function and optimizer selection
+   - Iterative training loop
+
+4. **Evaluation**
+   - Model performance comparison
+   - Accuracy / confusion analysis
+
+---
+
+## Files in this Repository
+
+- `hydraulic_condition_monitoring_1.py` – Data analysis and visualization
+- `hydraulic_condition_monitoring_2.py` – Model implementation and training
+- `hydraulic_condition_monitoring_3.py` – Alternative model / experiments
+- `hydraulic_condition_monitoring_4.py` – Evaluation, metrics, or tuning
+
+Each script follows a clear flow: data loading → preprocessing → model training → evaluation.
+
+---
