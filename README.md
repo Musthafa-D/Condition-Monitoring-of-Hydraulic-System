@@ -53,14 +53,3 @@ The goal is to develop a model capable of **reliable classification of hydraulic
    - Accuracy / confusion analysis
 
 ---
-
-## Files in this Repository
-
-- `hydraulic_condition_monitoring_1.py` – Data analysis and visualization
-- `hydraulic_condition_monitoring_2.py` – Model implementation and training
-- `hydraulic_condition_monitoring_3.py` – Alternative model / experiments
-- `hydraulic_condition_monitoring_4.py` – Evaluation, metrics, or tuning
-
-Each script follows a clear flow: data loading → preprocessing → model training → evaluation.
-
----
